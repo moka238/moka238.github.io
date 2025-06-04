@@ -2,28 +2,70 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>こんにちはページ</title>
+  <title>プロフィールページ</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    /* 最初のセクション（こんにちは） */
+    .hero {
       height: 100vh;
-      background-image: url("ピンクのバラ.jpg");
+      background-image: url("ピンクのバラ.jpg"); 
       background-size: cover;
       background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: sans-serif;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      font-size: 4rem;
     }
 
-    h1 {
-      color: white;
-      font-size: 4rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    /* 自己紹介セクション */
+    .profile {
+      min-height: 100vh;
+      padding: 60px 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .profile h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .profile p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
-  <h1>こんにちは</h1>
+
+  <!-- 1ページ目 -->
+  <section class="hero">
+    ようこそ、街のフラワーマーケットです💛
+  </section>
+
+  <!-- 2ページ目 -->
+  <section class="profile">
+    <h2>自己紹介</h2>
+    <p>
+      はじめまして。街のフラワーマーケットです。。<br>
+      お客様のご要望に合わせて様々なお花を提供しています。<br>
+      ぜひいらしてくださいね(⌒∇⌒)<br>
+      どうぞよろしくお願いします。
+    </p>
+  </section>
+
 </body>
 </html>
